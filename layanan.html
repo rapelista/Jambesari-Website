@@ -106,7 +106,7 @@
         </form>
 
         <button type="submit" class="btn btn-forms mt-3">Submit</button>
-        <button type="submit" class="btn bg-white btn-forms mt-3 reset">Reset</button>
+        <button type="submit" class="btn bg-white btn-forms mt-3 reset" onclick="resetInput()">Reset</button>
       </div>
     </div>
     <!-- End Layanan -->
@@ -329,6 +329,12 @@
         <script src="src/js/bootstrap.min.js"></script>
         <!-- JS Flickity -->
         <script src="src/js/flickity.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+          function resetInput() {
+            document.getElementsByClassName("form-control")[0].value = ""
+          }
+        </script>
     </body>
 
 </html>
